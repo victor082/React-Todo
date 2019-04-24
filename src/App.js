@@ -59,7 +59,7 @@ class App extends React.Component {
           ))}
         </div>
         <div>
-             <form>
+             <form onSubmit={this.addList}>
                  <input placeholder="Add To do" 
                  value={this.state.list.task}/>
                  <button>Add to do</button>
