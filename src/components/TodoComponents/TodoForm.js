@@ -1,15 +1,11 @@
 import React from 'react';
 import './Todo.css';
 
-function TodoForm() {
+function TodoForm(props) {
     return (
-        <div>
-            <form>
-                <input placeholder="Add To do" />
-                <button>Add to do</button>
-                <button>Clear Completed</button>
-            </form>
-        </div>
+        <div className="student-card">
+        <p>Task: {props.list.task}</p>
+      </div>
     )
 }
 
