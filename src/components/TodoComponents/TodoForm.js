@@ -5,7 +5,9 @@ function TodoForm() {
     return (
         <div>
             <form>
-                <input placeholder="To do" />
+                <input placeholder="Add To do" />
+                <button>Add Todo</button>
+                <button>Clear Completed</button>
             </form>
         </div>
     )

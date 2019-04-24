@@ -3,7 +3,7 @@
 import React from 'react';
 import './Todo.css';
 
-function TodoList() {
+function TodoList(props) {
     return (
         <div>
             <h1>Test</h1>
