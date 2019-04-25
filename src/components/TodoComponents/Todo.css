@@ -5,7 +5,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #2a2b3b;
+  background-color: #1a1a1a;
 }
 
 h1,
@@ -17,7 +17,7 @@ h6,
 div,
 p,
 span {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -28,7 +28,7 @@ span {
     padding: 20px 0;
 }
 .App .header  h1 {
-    color: rgb(240, 240, 240);
+    color: rgb(255, 255, 255);
 }
 
 .App .task-list {
@@ -38,31 +38,31 @@ span {
 
 .todo {
     font-size: 1.4rem;
-    background: #6876d3;
+    background: rgb(206, 157, 22);
     transition: transform .1;
     transition: all .5s;
 }
 .todo:hover {
-    background: #773535;
+    background: rgb(153, 128, 44);
     transform: scale(1.1);
 }
 
 button {
     font-size: 1.2rem;
-    color: white;
-    background: rgb(190, 67, 67);
+    color: rgb(255, 255, 255);
+    background: rgb(206, 157, 22);
     transition: transform .1;
     transition: all .5s;
     border: none;
 }
 
 button:hover {
-    background: rgb(158, 54, 54);
+    background: rgb(153, 128, 44);
     transform: scale(1.05);
 }
 
 .completed {
-    background-color: #703b3b;
+    background-color: rgb(151, 133, 58);
     text-decoration: line-through;
 }
 
@@ -76,6 +76,6 @@ form > input {
     width: 300px;
     outline: 0;
     color: white;
-    border-bottom: 1px solid #6d85dd;
+    border-bottom: 1px solid #F9D342;
     margin-right: 8px;
 }
