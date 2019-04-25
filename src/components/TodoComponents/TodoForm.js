@@ -23,7 +23,7 @@ class TodoForm extends React.Component {
         return (
             <form onSubmit={this.handleSubmit}>
                 <input 
-                placeholder="...add"
+                placeholder="Add new task.."
                 type="text"
                 name="task"
                 id="new-task"

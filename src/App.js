@@ -63,11 +63,12 @@ class App extends React.Component {
         <div className="header">
           <h1>To Do List:</h1>
         </div>
+        <div>
+        <TodoForm addTask={this.addTask} />
+        </div>
         <TodoList tasks={this.state.tasks}
         toggleComplete={this.toggleComplete} />
-        
-        <TodoForm addTask={this.addTask} />
-        <button onClick={this.removeCompleted}>Clear Item</button>
+         <button onClick={this.removeCompleted} className="clear-btn">Clear Item</button>
       </div>
     )
   }

@@ -1,11 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 html,
 body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #2a2b3b;
 }
 
-body {
-  background-color: #2d2d37;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+span {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+.App .header  h1 {
+    color: rgb(240, 240, 240);
+}
+
+.App .task-list {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+.todo {
+    font-size: 1.4rem;
+    background: #6876d3;
+    transition: transform .1;
+    transition: all .5s;
+}
+.todo:hover {
+    background: #54546d;
+    transform: scale(1.1);
+}
+
+button {
+    font-size: 1.2rem;
+    color: white;
+    background: rgb(190, 67, 67);
+    transition: transform .1;
+    transition: all .5s;
+    border: none;
+}
+
+button:hover {
+    background: rgb(230, 94, 94);
+    transform: scale(1.05);
+}
+
+.completed {
+    background-color: #54546d;
+    text-decoration: line-through;
+}
+
+form > input {
+    opacity: .9;
+    background-color: #2d2d37;
+    border: 0;
+    padding: 7px 0;
+    padding-left: 5px;
+    font-size: 1.2rem;
+    width: 300px;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid #6d85dd;
+    margin-right: 8px;
 }
