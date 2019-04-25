@@ -23,13 +23,36 @@ class App extends React.Component {
     }
   };
 
-  addTask = item => {
+  addTask = task => {
     const newTasksArray = [
       ...this.state.tasks,
-      { task: item, completed: false, id: Date.now() }
+      { task: task, completed: false, id: Date.now() }
     ];
     this.setState({ tasks: newTasksArray })
   };
+
+  toggleComplete = id => {
+    const newTasksArrayThatIMade = this.state.tasks.map(task => {
+      if (task.id === id) {
+        return {...task, completed: !task.completed}
+      }
+      return task;
+    })
+
+    this.setState({tasks: newTasksArrayThatIMade})
+  }
+
+  removeCompleted = () => {
+    const newTasksArray = this.state.tasks.filter((task) => {
+      if (!task.completed) {
+        return true
+      }
+      else {
+        return false
+      }
+    } )
+    this.setState({ tasks: newTasksArray})
+  }
 
   // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
@@ -40,8 +63,11 @@ class App extends React.Component {
         <div className="header">
           <h1>To Do List:</h1>
         </div>
-        <TodoList tasks={this.state.tasks}/>
+        <TodoList tasks={this.state.tasks}
+        toggleComplete={this.toggleComplete} />
+        
         <TodoForm addTask={this.addTask} />
+        <button onClick={this.removeCompleted}>Clear Item</button>
       </div>
     )
   }
