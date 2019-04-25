@@ -43,7 +43,7 @@ span {
     transition: all .5s;
 }
 .todo:hover {
-    background: #54546d;
+    background: #773535;
     transform: scale(1.1);
 }
 
@@ -57,12 +57,12 @@ button {
 }
 
 button:hover {
-    background: rgb(230, 94, 94);
+    background: rgb(158, 54, 54);
     transform: scale(1.05);
 }
 
 .completed {
-    background-color: #54546d;
+    background-color: #703b3b;
     text-decoration: line-through;
 }
 
